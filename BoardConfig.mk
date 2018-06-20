@@ -53,6 +53,8 @@ TARGET_USES_64_BIT_BINDER := true
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := potter,potter_retail
 
+BUILD_BROKEN_DUP_RULES := true
+
 # Enable dexpreopt to speed boot time
 #WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 #WITH_DEXPREOPT := true
