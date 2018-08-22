@@ -126,8 +126,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/cacert_location.pem:system/vendor/etc/cacert_location.pem
 
 # MotoActions
-PRODUCT_PACKAGES += \
-    MotoActions
+#PRODUCT_PACKAGES += \
+  #  MotoActions
 
 # Display
 PRODUCT_PACKAGES += \
@@ -178,10 +178,10 @@ PRODUCT_PACKAGES += \
     fingerprint.msm8953
 
 # FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni \
-    init.qti.fm.sh
+#PRODUCT_PACKAGES += \
+ #   FMRadio \
+  #  libfmjni \
+  #  init.qti.fm.sh
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -262,12 +262,12 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/vendor/etc/media_codecs_google_video.xml
 
 # NFC
-PRODUCT_COPY_FILES += \
-    frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
+#PRODUCT_COPY_FILES += \
+  #  frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+#PRODUCT_COPY_FILES += \
+ ##   $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+   # $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
 
 # Netutils
 PRODUCT_PACKAGES += \
@@ -276,14 +276,14 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     libandroid_net_32
 
-PRODUCT_PACKAGES += \
-    libnfc \
-    libnfc_jni \
-    nfc_nci.msm8953 \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras \
-    android.hardware.nfc@1.0-impl
+#PRODUCT_PACKAGES += \
+ #   libnfc \
+ #   libnfc_jni \
+  #  nfc_nci.msm8953 \
+  #  NfcNci \
+  #  Tag \
+  #  com.android.nfc_extras \
+  #  android.hardware.nfc@1.0-impl
 
 # OMX
 PRODUCT_PACKAGES += \

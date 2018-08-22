@@ -18,14 +18,15 @@
 $(call inherit-product, device/moto/potter/full_potter.mk)
 
 # Inherit some common DU stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/ev/config/common_full_phone.mk)
 
 # TWRP theme
 TW_THEME := portrait_hdpi
+BOOT_ANIMATION_SIZE := 1080p
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := potter
-PRODUCT_NAME := du_potter
+PRODUCT_NAME := ev_potter
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
