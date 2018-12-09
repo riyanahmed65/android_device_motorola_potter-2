@@ -1,0 +1,2 @@
+
+allow msm_irqbalanced msm_irqbalanced:capability {setgid setuid dac_override};
