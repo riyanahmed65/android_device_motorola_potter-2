@@ -79,3 +79,4 @@ allow init hal_fingerprint_hwservice:hwservice_manager add;
 
 allow init hal_perf_default:binder call;
 allow init hal_usb_hwservice:hwservice_manager add;
+allow init fingerprintd_data_file:file rename;

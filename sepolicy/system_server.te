@@ -28,3 +28,4 @@ get_prop(system_server, alarm_boot_prop)
 allow system_server mm-qcamerad:binder call;
 allow system_server init:binder {transfer call};
 allow system_server vendor_camera_prop:file {open getattr read};
+allow system_server dalvikcache_data_file:file {execute write};
