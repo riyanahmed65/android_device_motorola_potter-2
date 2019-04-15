@@ -30,6 +30,8 @@ $(call inherit-product, device/moto/potter/device.mk)
 
 $(call inherit-product, $(SRC_EVERVOLV_DIR)/build/core/config.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # TWRP theme
 TW_THEME := portrait_hdpi
