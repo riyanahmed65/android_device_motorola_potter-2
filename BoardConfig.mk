@@ -54,6 +54,7 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_OTA_ASSERT_DEVICE := potter,potter_retail
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_PHONY_TARGETS := true
 
 # Enable dexpreopt to speed boot time
 #WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
