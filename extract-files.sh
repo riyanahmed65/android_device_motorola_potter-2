@@ -63,4 +63,8 @@ setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC"
 
+# Load libmot_gpu_mapper shim
+MOT_GPU_MAPPER="$BLOB_ROOT"/vendor/lib/libmot_gpu_mapper.so
+patchelf --add-needed libgpu_mapper_shim.so "$MOT_GPU_MAPPER"
+
 "$MY_DIR"/setup-makefiles.sh
