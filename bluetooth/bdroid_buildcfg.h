@@ -17,10 +17,19 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#include <cutils/properties.h>
 #include <string.h>
+#include <stdint.h>
 
 #define BTM_DEF_LOCAL_NAME "Moto G5 Plus"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+int32_t property_get_int32(const char *key, int32_t default_value);
+#ifdef __cplusplus
+}
+#endif
+
 #define BLUETOOTH_QTI_SW TRUE
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16
@@ -29,5 +38,4 @@
 #define BTM_WBS_INCLUDED TRUE
 #define BTIF_HF_WBS_PREFERRED TRUE
 #define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
-#undef PROPERTY_VALUE_MAX
 #endif
