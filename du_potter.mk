@@ -15,10 +15,19 @@
 # limitations under the License.
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, device/moto/potter/full_potter.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-# Inherit some common DU stuff.
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
+
+# Inherit DU
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
+
+# Inherit from hardware-specific part of the product configuration
+$(call inherit-product, device/moto/potter/device.mk)
+
 
 # TWRP theme
 TW_THEME := portrait_hdpi

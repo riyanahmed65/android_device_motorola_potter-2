@@ -14,7 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+# for specific
+$(call inherit-product, vendor/motorola/potter/potter-vendor.mk)
 
 
 # These are the hardware-specific features
