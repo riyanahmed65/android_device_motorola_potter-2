@@ -54,9 +54,9 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_OTA_ASSERT_DEVICE := potter,potter_retail
 
 # Enable dexpreopt to speed boot time
-WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
-WITH_DEXPREOPT := true
-PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+#WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
+#WITH_DEXPREOPT := true
+#PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
 # GPS
 TARGET_NO_RPC := true
@@ -178,7 +178,7 @@ DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/configs/compatibility_matrix.xml
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
-PRODUCT_BOOT_JARS += telephony-ext
+#PRODUCT_BOOT_JARS += telephony-ext
 
 # NFC
 NXP_CHIP_TYPE := PN551
