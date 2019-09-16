@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # for specific
-$(call inherit-product, vendor/motorola/potter/potter-vendor.mk)
+$(call inherit-product, vendor/moto/potter/potter-vendor.mk)
 
 
 # These are the hardware-specific features

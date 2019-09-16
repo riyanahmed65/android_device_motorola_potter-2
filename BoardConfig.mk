@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
--include vendor/motorola/potter/BoardConfigVendor.mk
+-include vendor/moto/potter/BoardConfigVendor.mk
 
 DEVICE_PATH := device/moto/potter
 
