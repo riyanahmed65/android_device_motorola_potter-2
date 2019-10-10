@@ -384,10 +384,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.potter
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
