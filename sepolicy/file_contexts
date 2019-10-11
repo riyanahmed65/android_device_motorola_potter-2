@@ -1,5 +1,5 @@
 # ADSP
-/sys/kernel/aov(/.*)?                                    u:object_r:sysfs_adsp:s0
+#/sys/kernel/aov(/.*)?                                    u:object_r:sysfs_adsp:s0
 /data/adspd(/.*)?                                        u:object_r:adspd_data_file:s0
 
 # AMPS
