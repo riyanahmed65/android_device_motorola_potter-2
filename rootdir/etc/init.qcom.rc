@@ -48,6 +48,10 @@ on init
 
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
+    # We are mounting system(/vendor) early
+    # vold needs keymaster that needs qseecomd
+    start qseecomd
+
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
