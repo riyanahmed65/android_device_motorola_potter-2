@@ -248,8 +248,8 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.potter
 
 # MotoActions
-PRODUCT_PACKAGES += \
-    MotoActions
+#PRODUCT_PACKAGES += \
+ #   MotoActions
 
 # Media (OMX)
 PRODUCT_PACKAGES += \
