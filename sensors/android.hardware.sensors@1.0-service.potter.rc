@@ -1,4 +1,4 @@
-service vendor.sensors-hal-1-0 /vendor/bin/hw/android.hardware.sensors@1.0-service.legacy
+service vendor.sensors-hal-1-0 /system/vendor/bin/hw/android.hardware.sensors@1.0-service.potter
     interface android.hardware.sensors@1.0::ISensors default
     class hal
     user system
