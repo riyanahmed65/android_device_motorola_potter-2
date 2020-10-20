@@ -183,6 +183,7 @@ ifeq ($(BOARD_USES_MOT_SENSOR_HUB), true)
         LOCAL_PROPRIETARY_MODULE := true
         LOCAL_SHARED_LIBRARIES += liblog libcutils libz libdl libutils
         LOCAL_CLANG := true
+        LOCAL_PROPRIETARY_MODULE := true
         LOCAL_MODULE := sensors.$(TARGET_BOARD_PLATFORM)
         LOCAL_CFLAGS += -Wno-gnu-designator -Wno-writable-strings
 
@@ -206,6 +207,7 @@ ifeq ($(BOARD_USES_MOT_SENSOR_HUB), true)
 
     LOCAL_SHARED_LIBRARIES := libcutils libc libutils liblog
     LOCAL_PROPRIETARY_MODULE := true
+    LOCAL_PROPRIETARY_MODULE := true
     LOCAL_MODULE := sensorhub.$(TARGET_BOARD_PLATFORM)
     LOCAL_MODULE_TAGS := optional
     LOCAL_CFLAGS += -Wno-gnu-designator -Wno-writable-strings
@@ -222,6 +224,7 @@ ifeq ($(BOARD_USES_MOT_SENSOR_HUB), true)
 
     LOCAL_MODULE_TAGS := optional
     LOCAL_CFLAGS := -DLOG_TAG=\"MOTOSH\" -DMODULE_$(SH_MODULE)
+    LOCAL_PROPRIETARY_MODULE := true
     LOCAL_MODULE := motosh
     LOCAL_PROPRIETARY_MODULE := true
     #LOCAL_CFLAGS+= -D_DEBUG
@@ -256,7 +259,7 @@ ifeq ($(BOARD_USES_MOT_SENSOR_HUB), true)
         SMARTCOMPASS_LIB := libSmartCompass
 
         LOCAL_MODULE_TAGS := optional
-
+        LOCAL_PROPRIETARY_MODULE := true
         LOCAL_MODULE  := akmd09912
 
         LOCAL_C_INCLUDES := \
@@ -291,6 +294,7 @@ ifeq ($(BOARD_USES_MOT_SENSOR_HUB), true)
         include $(BUILD_EXECUTABLE)
 
         include $(CLEAR_VARS)
+        LOCAL_PROPRIETARY_MODULE := true
         LOCAL_MODULE        := AK09912
         LOCAL_MODULE_TAGS   := optional
         LOCAL_MODULE_CLASS  := STATIC_LIBRARIES
@@ -303,6 +307,7 @@ ifeq ($(BOARD_USES_MOT_SENSOR_HUB), true)
     ifeq ($(BOARD_USES_CAP_SENSOR), true)
         CAP_PATH := capsensor
         include $(CLEAR_VARS)
+        LOCAL_PROPRIETARY_MODULE := true
         LOCAL_MODULE := capsense_reset
         LOCAL_SRC_FILES :=  \
             $(CAP_PATH)/capsense.cpp
@@ -329,6 +334,7 @@ ifeq ($(BOARD_USES_MOT_SENSOR_HUB), true)
 
     # ** Firmware BlackList **********************************************************
     include $(CLEAR_VARS)
+    LOCAL_PROPRIETARY_MODULE := true
     LOCAL_MODULE        := sensorhub-blacklist.txt
     LOCAL_MODULE_TAGS   := optional
     LOCAL_MODULE_CLASS  := ETC
