@@ -274,7 +274,7 @@ vendor/etc/permissions/qti-vzw-ims-internal.xml
 vendor/etc/permissions/qti_libpermissions.xml
 vendor/etc/permissions/qti_permissions.xml
 vendor/etc/vintf/manifest/android.hardware.gnss@2.0-service-qti.xml
-vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
+-vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
 vendor/etc/xtra_root_cert.pem
 vendor/firmware/a506_zap.b00
 vendor/firmware/a506_zap.b01
